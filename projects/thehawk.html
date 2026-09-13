@@ -40,235 +40,261 @@
          PAGE CSS
          ========================================= -->
 
-    <style>
+         <style>
 
-        /* -----------------------------------------
-           PLACEHOLDER IMAGE
-           ----------------------------------------- */
-
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-        }
-
-        @media (min-width: 768px) {
-
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
+            /* -----------------------------------------
+               PLACEHOLDER IMAGE
+               ----------------------------------------- */
+        
+            .bd-placeholder-img {
+                font-size: 1.125rem;
+                text-anchor: middle;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
             }
-
-        }
-
-
-        /* =========================================
-           CONSISTENT PROJECT GALLERY WIDTH
-           ========================================= */
-
-        .project-gallery {
-            width: 60%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-
-        /* Keep gallery rows aligned */
-
-        .project-gallery .row {
-            margin-left: 0;
-            margin-right: 0;
-        }
-
-
-        /* Images fill their columns */
-
-        .project-gallery img {
-            display: block;
-            width: 100%;
-            height: auto;
-        }
-
-
-        /* Bootstrap column gutters */
-
-        .project-gallery .col-xl-12,
-        .project-gallery .col-xl-6,
-        .project-gallery .col-xl-4,
-        .project-gallery .col-md-12,
-        .project-gallery .col-md-6,
-        .project-gallery .col-md-4 {
-
-            padding-left: 0.75rem;
-            padding-right: 0.75rem;
-
-        }
-
-
-        /* =========================================
-           HEADER IMAGE
-           ========================================= */
-
-           .project-header-image {
-            width:60%;
-            max-width: 1600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .project-header-image img {
-            display: block;
-            width: 100%;
-            height: auto;
-        }
-
-
-        /* =========================================
-           SLIDESHOW
-           ========================================= */
-
-        .slideshow-container {
-
-            position: relative;
-            width: 100%;
-            height: auto;
-            overflow: hidden;
-
-        }
-
-
-        .slideshow-container .slide {
-
-            display: none;
-            width: 100%;
-            height: auto;
-            opacity: 0;
-
-        }
-
-
-        .slideshow-container .slide.active {
-
-            display: block;
-            opacity: 1;
-            animation: slideshowFade 0.5s ease-in-out;
-
-        }
-
-
-        .slideshow-container .slide img {
-
-            display: block;
-            width: 100%;
-            height: auto;
-            object-fit: contain;
-
-        }
-
-
-        /* -----------------------------------------
-           Slideshow fade animation
-           ----------------------------------------- */
-
-        @keyframes slideshowFade {
-
-            from {
-                opacity: 0;
+        
+            @media (min-width: 768px) {
+        
+                .bd-placeholder-img-lg {
+                    font-size: 3.5rem;
+                }
+        
             }
-
-            to {
-                opacity: 1;
-            }
-
-        }
-
-
-        /* =========================================
-           SLIDESHOW NAVIGATION ARROWS
-           ========================================= */
-
-        .slideshow-container .prev,
-        .slideshow-container .next {
-
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-
-            background: none;
-            border: none;
-
-            color: #d2d2d2;
-
-            font-size: 2.5rem;
-
-            cursor: pointer;
-
-            padding: 0.5rem;
-
-            z-index: 10;
-
-            transition:
-                opacity 0.2s ease,
-                transform 0.2s ease;
-
-        }
-
-
-        .slideshow-container .prev {
-            left: 40px;
-        }
-
-
-        .slideshow-container .next {
-            right: 40px;
-        }
-
-
-        .slideshow-container .prev:hover,
-        .slideshow-container .next:hover {
-
-            opacity: 0.6;
-
-            transform:
-                translateY(-50%)
-                scale(1.1);
-
-        }
-
-
-        /* =========================================
-           MOBILE
-           ========================================= */
-
-        @media (max-width: 768px) {
-
+        
+        
+            /* =========================================
+               CONSISTENT PROJECT GALLERY WIDTH
+               ========================================= */
+        
             .project-gallery {
-                width: 94%;
+                width: 60%;
+                max-width: 1600px;
+                margin-left: auto;
+                margin-right: auto;
             }
-
-
-            .slideshow-container .prev {
-                left: 15px;
+        
+        
+            /* Keep gallery rows aligned */
+        
+            .project-gallery .row {
+                margin-left: 0;
+                margin-right: 0;
             }
-
-
-            .slideshow-container .next {
-                right: 15px;
+        
+        
+            /* Images fill their columns */
+        
+            .project-gallery img {
+                display: block;
+                width: 100%;
+                height: auto;
             }
-
-
+        
+        
+            /* Bootstrap column gutters */
+        
+            .project-gallery .col-xl-12,
+            .project-gallery .col-xl-6,
+            .project-gallery .col-xl-4,
+            .project-gallery .col-md-12,
+            .project-gallery .col-md-6,
+            .project-gallery .col-md-4 {
+        
+                padding-left: 0.75rem;
+                padding-right: 0.75rem;
+        
+            }
+        
+        
+            /* =========================================
+               HEADER IMAGE
+               ========================================= */
+        
+            .project-header-image {
+                width: 60%;
+                max-width: 1600px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        
+        
+            .project-header-image img {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+        
+        
+            /* =========================================
+               SLIDESHOW
+               ========================================= */
+        
+            .slideshow-container {
+        
+                position: relative;
+                width: 100%;
+                height: auto;
+                overflow: hidden;
+        
+            }
+        
+        
+            .slideshow-container .slide {
+        
+                display: none;
+                width: 100%;
+                height: auto;
+                opacity: 0;
+        
+            }
+        
+        
+            .slideshow-container .slide.active {
+        
+                display: block;
+                opacity: 1;
+                animation: slideshowFade 0.5s ease-in-out;
+        
+            }
+        
+        
+            .slideshow-container .slide img {
+        
+                display: block;
+                width: 100%;
+                height: auto;
+                object-fit: contain;
+        
+            }
+        
+        
+            /* -----------------------------------------
+               Slideshow fade animation
+               ----------------------------------------- */
+        
+            @keyframes slideshowFade {
+        
+                from {
+                    opacity: 0;
+                }
+        
+                to {
+                    opacity: 1;
+                }
+        
+            }
+        
+        
+            /* =========================================
+               SLIDESHOW NAVIGATION ARROWS
+               ========================================= */
+        
             .slideshow-container .prev,
             .slideshow-container .next {
-
-                font-size: 2rem;
-
+        
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+        
+                background: none;
+                border: none;
+        
+                color: #d2d2d2;
+        
+                font-size: 2.5rem;
+        
+                cursor: pointer;
+        
+                padding: 0.5rem;
+        
+                z-index: 10;
+        
+                transition:
+                    opacity 0.2s ease,
+                    transform 0.2s ease;
+        
             }
-
-        }
-
-    </style>
+        
+        
+            .slideshow-container .prev {
+                left: 40px;
+            }
+        
+        
+            .slideshow-container .next {
+                right: 40px;
+            }
+        
+        
+            .slideshow-container .prev:hover,
+            .slideshow-container .next:hover {
+        
+                opacity: 0.6;
+        
+                transform:
+                    translateY(-50%)
+                    scale(1.1);
+        
+            }
+        
+        
+            /* =========================================
+               MOBILE
+               ========================================= */
+        
+            @media (max-width: 768px) {
+        
+                /*
+                 * Keep the header and gallery the same
+                 * overall width on mobile.
+                 */
+        
+                .project-header-image,
+                .project-gallery {
+                    width: 94%;
+                }
+        
+        
+                /*
+                 * Remove the Bootstrap side gutters on mobile
+                 * so gallery images line up exactly with the header.
+                 */
+        
+                .project-gallery .col-xl-12,
+                .project-gallery .col-xl-6,
+                .project-gallery .col-xl-4,
+                .project-gallery .col-md-12,
+                .project-gallery .col-md-6,
+                .project-gallery .col-md-4 {
+        
+                    padding-left: 0;
+                    padding-right: 0;
+        
+                }
+        
+        
+                .slideshow-container .prev {
+                    left: 15px;
+                }
+        
+        
+                .slideshow-container .next {
+                    right: 15px;
+                }
+        
+        
+                .slideshow-container .prev,
+                .slideshow-container .next {
+        
+                    font-size: 2rem;
+        
+                }
+        
+            }
+        
+        </style>
 
 </head>
 
