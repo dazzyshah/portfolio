@@ -76,15 +76,11 @@
             }
         
         
-            /* Keep gallery rows aligned */
-        
             .project-gallery .row {
                 margin-left: 0;
                 margin-right: 0;
             }
         
-        
-            /* Images fill their columns */
         
             .project-gallery img {
                 display: block;
@@ -92,8 +88,6 @@
                 height: auto;
             }
         
-        
-            /* Bootstrap column gutters */
         
             .project-gallery .col-xl-12,
             .project-gallery .col-xl-6,
@@ -124,6 +118,24 @@
                 display: block;
                 width: 100%;
                 height: auto;
+            }
+        
+        
+            /* =========================================
+               PROJECT TEXT / INTRO
+               ========================================= */
+        
+            .project-intro {
+                width: 60%;
+                max-width: 1600px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        
+        
+            .project-intro .row {
+                margin-left: 0;
+                margin-right: 0;
             }
         
         
@@ -246,21 +258,24 @@
         
             @media (max-width: 768px) {
         
-                /*
-                 * Keep the header and gallery the same
-                 * overall width on mobile.
-                 */
+        
+                /* -----------------------------------------
+                   Keep all project content aligned
+                   ----------------------------------------- */
         
                 .project-header-image,
-                .project-gallery {
+                .project-gallery,
+                .project-intro {
+        
                     width: 94%;
+                    max-width: none;
+        
                 }
         
         
-                /*
-                 * Remove the Bootstrap side gutters on mobile
-                 * so gallery images line up exactly with the header.
-                 */
+                /* -----------------------------------------
+                   Remove Bootstrap gallery gutters on mobile
+                   ----------------------------------------- */
         
                 .project-gallery .col-xl-12,
                 .project-gallery .col-xl-6,
@@ -274,6 +289,10 @@
         
                 }
         
+        
+                /* -----------------------------------------
+                   Slideshow arrows
+                   ----------------------------------------- */
         
                 .slideshow-container .prev {
                     left: 15px;
@@ -295,221 +314,223 @@
             }
         
         </style>
-
-</head>
-
-
-<body>
-
-
-<!-- =========================================
-     HEADER / NAVIGATION
-     ========================================= -->
-
-<header>
-
-</header>
-
-
-<main role="main">
-
-
-    <!-- =========================================
-         SITE HEADER
-         ========================================= -->
-
-    <div class="container"
-         style="padding-left: 0.9rem; padding-top: 4rem;">
-
-        <div class="row">
-
-            <div class="col-xl-4 col-md-6 mb-4">
-
-                <a href="../index.html">
-
-                    <h2
-                        style="
-                        font-size: 560%;
-                        line-height: 2rem;
-                        color: #303030;
-                        text-align: left;
-                        font-family: moonbright_demoregular;
-                        ">
-
-                        dazzy shah
-
-                    </h2>
-
-                </a>
-
+        
+        </head>
+        
+        
+        <body>
+        
+        
+        <!-- =========================================
+             HEADER / NAVIGATION
+             ========================================= -->
+        
+        <header>
+        
+        </header>
+        
+        
+        <main role="main">
+        
+        
+            <!-- =========================================
+                 SITE HEADER
+                 ========================================= -->
+        
+            <div class="container project-intro"
+                 style="padding-top: 4rem;">
+        
+                <div class="row">
+        
+                    <div class="col-xl-4 col-md-6 mb-4">
+        
+                        <a href="../index.html">
+        
+                            <h2
+                                style="
+                                font-size: 560%;
+                                line-height: 2rem;
+                                color: #303030;
+                                text-align: left;
+                                font-family: moonbright_demoregular;
+                                ">
+        
+                                dazzy shah
+        
+                            </h2>
+        
+                        </a>
+        
+                    </div>
+        
+                </div>
+        
+        
+                <div class="row">
+        
+                    <!-- Job title -->
+        
+                    <div class="col-xl-6 col-md-6 mb-4">
+        
+                        <h2
+                            style="
+                            font-family: robotothin;
+                            color: #303030;
+                            font-size: 185%;
+                            ">
+        
+                            PRODUCTION DESIGNER
+        
+                        </h2>
+        
+                    </div>
+        
+        
+                    <!-- Navigation -->
+        
+                    <div class="col-xl-6 col-md-6 mb-4">
+        
+                        <h5
+                            style="
+                            text-align: right;
+                            text-decoration: none;
+                            ">
+        
+                            <a
+                                style="
+                                font-family: robotothin;
+                                color: #303030;
+                                text-align: right;
+                                "
+                                href="../index.html">
+        
+                                home |
+        
+                            </a>
+        
+        
+                            <a
+                                style="
+                                font-family: robotothin;
+                                color: #303030;
+                                text-align: right;
+                                "
+                                href="../aboutme.html">
+        
+                                about me |
+        
+                            </a>
+        
+        
+                            <a
+                                style="
+                                font-family: robotothin;
+                                color: #303030;
+                                text-align: right;
+                                "
+                                href="../resume.html">
+        
+                                resumé
+        
+                            </a>
+        
+                        </h5>
+        
+                    </div>
+        
+                </div>
+        
             </div>
-
-        </div>
-
-
-        <div class="row">
-
-            <!-- Job title -->
-
-            <div class="col-xl-6 col-md-6 mb-4">
-
-                <h2
+        
+        
+        
+            <!-- =========================================
+                 PROJECT INTRO
+                 ========================================= -->
+        
+            <div class="container project-intro">
+        
+        
+                <div
+                    class="row"
                     style="
-                    font-family: robotothin;
-                    color: #303030;
-                    font-size: 185%;
+                    padding-top: 2rem;
+                    padding-bottom: 1rem;
                     ">
-
-                    PRODUCTION DESIGNER
-
-                </h2>
-
+        
+                    <h3 style="font-family:robotobold_italic">
+        
+                        THE HAWK SEASON ONE – PREMIERE & PRE-RECEPTION
+        
+                        <span style="font-family: robotoitalic;">
+        
+                            (NETFLIX)
+        
+                        </span>
+        
+                    </h3>
+        
+                </div>
+        
+        
+                <div class="row">
+        
+                    <p style="line-height: 1.6;">
+        
+                        On the back nine of his career, golf legend Lonnie “The Hawk” Hawkins chases one final major... and drags everyone he loves into the chaos.
+        
+                        <br><br>
+        
+        
+                        As Lead Experiential Designer, I owned the 3D design and execution of the premiere and pre-reception, collaborating closely with Lead Graphic 
+                        Designer Lina Cheng and Creative Director Alex Mutch. I designed the scenic assets and environmental touchpoints for the carpet, curated 
+                        furniture, décor, and greens, and developed multiple site and permitting plans to bring the experience to life.
+        
+                        <br><br>
+        
+                        I also mapped guest flows across a range of audiences – from invited guests and influencers to key talent, cast, and BOH staff – ensuring the space 
+                        was both visually immersive and operationally functional. From developing fabrication-ready designs and working closely with our fabricators to overseeing 
+                        the details through install and on-site execution, I helped carry the experience from concept through build and premiere night.
+        
+                        <br><br>
+        
+                        <span style="font-family: robotobold;">
+        
+                            Design Agency –
+        
+                        </span>
+        
+                        MKG
+        
+        
+                        <br>
+        
+        
+                        <span style="font-family: robotobold;">
+        
+                            Creative Director –
+        
+                        </span>
+        
+                        Alex Mutch
+        
+        
+                        <br>
+        
+        
+                        <span style="font-family: robotobold;">
+        
+                            Lead Experiential Designer –
+        
+                        </span>
+        
+                        Dazzy Shah
+        
+                    </p>
+        
+                </div>
+        
             </div>
-
-
-            <!-- Navigation -->
-
-            <div class="col-xl-6 col-md-6 mb-4">
-
-                <h5
-                    style="
-                    text-align: right;
-                    text-decoration: none;
-                    ">
-
-                    <a
-                        style="
-                        font-family: robotothin;
-                        color: #303030;
-                        text-align: right;
-                        "
-                        href="../index.html">
-
-                        home |
-
-                    </a>
-
-
-                    <a
-                        style="
-                        font-family: robotothin;
-                        color: #303030;
-                        text-align: right;
-                        "
-                        href="../aboutme.html">
-
-                        about me |
-
-                    </a>
-
-
-                    <a
-                        style="
-                        font-family: robotothin;
-                        color: #303030;
-                        text-align: right;
-                        "
-                        href="../resume.html">
-
-                        resumé
-
-                    </a>
-
-                </h5>
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-
-    <!-- =========================================
-         PROJECT INTRO
-         ========================================= -->
-
-    <div class="container">
-
-
-        <div
-            class="row"
-            style="
-            padding-top: 2rem;
-            padding-bottom: 1rem;
-            ">
-
-            <h3 style="font-family:robotobold_italic">
-
-                THE HAWK SEASON ONE – PREMIERE & PRE-RECEPTION
-
-                <span style="font-family: robotoitalic;">
-
-                    (NETFLIX)
-
-                </span>
-
-            </h3>
-
-        </div>
-
-
-        <div class="row">
-
-            <p style="line-height: 1.6;">
-
-                On the back nine of his career, golf legend Lonnie “The Hawk” Hawkins chases one final major... and drags everyone he loves into the chaos.
-
-                <br><br>
-
-
-                As Lead Experiential Designer, I owned the 3D design and execution of the premiere and pre-reception, collaborating closely with Lead Graphic 
-                Designer Lina Cheng and Creative Director Alex Mutch. I designed the scenic assets and environmental touchpoints for the carpet, curated 
-                furniture, décor, and greens, and developed multiple site and permitting plans to bring the experience to life.
-
-                <br><br>
-                I also mapped guest flows across a range of audiences – from invited guests and influencers to key talent, cast, and BOH staff – ensuring the space 
-                was both visually immersive and operationally functional. From developing fabrication-ready designs and working closely with our fabricators to overseeing 
-                the details through install and on-site execution, I helped carry the experience from concept through build and premiere night.
-                <br><br>
-                <span style="font-family: robotobold;">
-
-                    Design Agency –
-
-                </span>
-
-                MKG
-
-
-                <br>
-
-
-                <span style="font-family: robotobold;">
-
-                    Creative Director –
-
-                </span>
-
-                Alex Mutch
-
-
-                <br>
-
-
-                <span style="font-family: robotobold;">
-
-                    Lead Experiential Designer –
-
-                </span>
-
-                Dazzy Shah
-
-            </p>
-
-        </div>
-
-    </div>
-
 
 
     <!-- =========================================
