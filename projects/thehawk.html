@@ -1,0 +1,1199 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="portfolio">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="dazzy">
+
+    <title>Dazzy Shah</title>
+
+    <link rel="shortcut icon" href="../photos/profilepicture.png"/>
+
+
+    <!-- =========================================
+         BOOTSTRAP
+         ========================================= -->
+
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="../assets/dist/css/mdb.min.css" rel="stylesheet">
+
+    <!-- BaguetteBox Lightbox -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/dist/css/gallery-clean.css">
+    <link href="../assets/dist/css/moonbright/stylesheet.css" rel="stylesheet">
+    <link href="../assets/dist/css/roboto/stylesheet.css" rel="stylesheet">
+
+    <link href="album.css" rel="stylesheet">
+
+
+    <!-- =========================================
+         PAGE CSS
+         ========================================= -->
+
+    <style>
+
+        /* -----------------------------------------
+           PLACEHOLDER IMAGE
+           ----------------------------------------- */
+
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+
+        }
+
+
+        /* =========================================
+           CONSISTENT PROJECT GALLERY WIDTH
+           ========================================= */
+
+        .project-gallery {
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+        /* Keep gallery rows aligned */
+
+        .project-gallery .row {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+
+        /* Images fill their columns */
+
+        .project-gallery img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+
+        /* Bootstrap column gutters */
+
+        .project-gallery .col-xl-12,
+        .project-gallery .col-xl-6,
+        .project-gallery .col-xl-4,
+        .project-gallery .col-md-12,
+        .project-gallery .col-md-6,
+        .project-gallery .col-md-4 {
+
+            padding-left: 0.75rem;
+            padding-right: 0.75rem;
+
+        }
+
+
+        /* =========================================
+           HEADER IMAGE
+           ========================================= */
+
+           .project-header-image {
+            width:60%;
+            max-width: 1600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .project-header-image img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+
+        /* =========================================
+           SLIDESHOW
+           ========================================= */
+
+        .slideshow-container {
+
+            position: relative;
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+
+        }
+
+
+        .slideshow-container .slide {
+
+            display: none;
+            width: 100%;
+            height: auto;
+            opacity: 0;
+
+        }
+
+
+        .slideshow-container .slide.active {
+
+            display: block;
+            opacity: 1;
+            animation: slideshowFade 0.5s ease-in-out;
+
+        }
+
+
+        .slideshow-container .slide img {
+
+            display: block;
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+
+        }
+
+
+        /* -----------------------------------------
+           Slideshow fade animation
+           ----------------------------------------- */
+
+        @keyframes slideshowFade {
+
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+
+        }
+
+
+        /* =========================================
+           SLIDESHOW NAVIGATION ARROWS
+           ========================================= */
+
+        .slideshow-container .prev,
+        .slideshow-container .next {
+
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+
+            background: none;
+            border: none;
+
+            color: #d2d2d2;
+
+            font-size: 2.5rem;
+
+            cursor: pointer;
+
+            padding: 0.5rem;
+
+            z-index: 10;
+
+            transition:
+                opacity 0.2s ease,
+                transform 0.2s ease;
+
+        }
+
+
+        .slideshow-container .prev {
+            left: 40px;
+        }
+
+
+        .slideshow-container .next {
+            right: 40px;
+        }
+
+
+        .slideshow-container .prev:hover,
+        .slideshow-container .next:hover {
+
+            opacity: 0.6;
+
+            transform:
+                translateY(-50%)
+                scale(1.1);
+
+        }
+
+
+        /* =========================================
+           MOBILE
+           ========================================= */
+
+        @media (max-width: 768px) {
+
+            .project-gallery {
+                width: 94%;
+            }
+
+
+            .slideshow-container .prev {
+                left: 15px;
+            }
+
+
+            .slideshow-container .next {
+                right: 15px;
+            }
+
+
+            .slideshow-container .prev,
+            .slideshow-container .next {
+
+                font-size: 2rem;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     HEADER / NAVIGATION
+     ========================================= -->
+
+<header>
+
+</header>
+
+
+<main role="main">
+
+
+    <!-- =========================================
+         SITE HEADER
+         ========================================= -->
+
+    <div class="container"
+         style="padding-left: 0.9rem; padding-top: 4rem;">
+
+        <div class="row">
+
+            <div class="col-xl-4 col-md-6 mb-4">
+
+                <a href="../index.html">
+
+                    <h2
+                        style="
+                        font-size: 560%;
+                        line-height: 2rem;
+                        color: #303030;
+                        text-align: left;
+                        font-family: moonbright_demoregular;
+                        ">
+
+                        dazzy shah
+
+                    </h2>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="row">
+
+            <!-- Job title -->
+
+            <div class="col-xl-6 col-md-6 mb-4">
+
+                <h2
+                    style="
+                    font-family: robotothin;
+                    color: #303030;
+                    font-size: 185%;
+                    ">
+
+                    PRODUCTION DESIGNER
+
+                </h2>
+
+            </div>
+
+
+            <!-- Navigation -->
+
+            <div class="col-xl-6 col-md-6 mb-4">
+
+                <h5
+                    style="
+                    text-align: right;
+                    text-decoration: none;
+                    ">
+
+                    <a
+                        style="
+                        font-family: robotothin;
+                        color: #303030;
+                        text-align: right;
+                        "
+                        href="../index.html">
+
+                        home |
+
+                    </a>
+
+
+                    <a
+                        style="
+                        font-family: robotothin;
+                        color: #303030;
+                        text-align: right;
+                        "
+                        href="../aboutme.html">
+
+                        about me |
+
+                    </a>
+
+
+                    <a
+                        style="
+                        font-family: robotothin;
+                        color: #303030;
+                        text-align: right;
+                        "
+                        href="../resume.html">
+
+                        resumé
+
+                    </a>
+
+                </h5>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================================
+         PROJECT INTRO
+         ========================================= -->
+
+    <div class="container">
+
+
+        <div
+            class="row"
+            style="
+            padding-top: 2rem;
+            padding-bottom: 1rem;
+            ">
+
+            <h3 style="font-family:robotobold_italic">
+
+                THE HAWK SEASON ONE – PREMIERE & PRE-RECEPTION
+
+                <span style="font-family: robotoitalic;">
+
+                    (NETFLIX)
+
+                </span>
+
+            </h3>
+
+        </div>
+
+
+        <div class="row">
+
+            <p style="line-height: 1.6;">
+
+                On the back nine of his career, golf legend Lonnie “The Hawk” Hawkins chases one final major... and drags everyone he loves into the chaos.
+
+                <br><br>
+
+
+                As Lead Experiential Designer, I owned the 3D design and execution of the premiere and pre-reception, collaborating closely with Lead Graphic 
+                Designer Lina Cheng and Creative Director Alex Mutch. I designed the scenic assets and environmental touchpoints for the carpet, curated 
+                furniture, décor, and greens, and developed multiple site and permitting plans to bring the experience to life.
+
+                <br><br>
+                I also mapped guest flows across a range of audiences – from invited guests and influencers to key talent, cast, and BOH staff – ensuring the space 
+                was both visually immersive and operationally functional. From developing fabrication-ready designs and working closely with our fabricators to overseeing 
+                the details through install and on-site execution, I helped carry the experience from concept through build and premiere night.
+                <br><br>
+                <span style="font-family: robotobold;">
+
+                    Design Agency –
+
+                </span>
+
+                MKG
+
+
+                <br>
+
+
+                <span style="font-family: robotobold;">
+
+                    Creative Director –
+
+                </span>
+
+                Alex Mutch
+
+
+                <br>
+
+
+                <span style="font-family: robotobold;">
+
+                    Lead Experiential Designer –
+
+                </span>
+
+                Dazzy Shah
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================================
+         HEADER IMAGE
+         ========================================= -->
+
+    <div class="project-header-image">
+
+        <img
+            src="../photos/the-hawk/01-header.jpg"
+            class="img-fluid"
+            alt="The Hawk project header">
+
+    </div>
+
+
+
+    <!-- =========================================
+         SITE PLAN / LAYOUT / MOODBOARD
+         ========================================= -->
+
+    <div class="project-gallery">
+
+        <div class="tz-gallery">
+
+
+            <!-- 02 + 03 -->
+
+            <div class="row" style="padding-top: 5%">
+
+
+                <!-- Site Plan -->
+
+                <div class="col-xl-6 col-md-6 mb-4">
+
+                    <div class="thumbnail">
+
+                        <div class="view overlay">
+
+                            <a
+                                class="lightbox"
+                                href="../photos/the-hawk/02-site-plan.jpg">
+
+                                <img
+                                    class="img-fluid"
+                                    src="../photos/the-hawk/02-site-plan.jpg"
+                                    alt="Director's Village Westwood site plan">
+
+                                <div
+                                    class="mask flex-center rgba-white-strong">
+                                </div>
+
+                            </a>
+
+                        </div>
+
+
+                        <div class="caption">
+
+                            <p
+                                style="
+                                font-family: robotoitalic;
+                                font-size: 75%;
+                                ">
+
+                                Director's Village Westwood – Site Plan
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Layout -->
+
+                <div class="col-xl-6 col-md-6 mb-4">
+
+                    <div class="thumbnail">
+
+                        <div class="view overlay">
+
+                            <a
+                                class="lightbox"
+                                href="../photos/the-hawk/03-layout.jpg">
+
+                                <img
+                                    class="img-fluid"
+                                    src="../photos/the-hawk/03-layout.jpg"
+                                    alt="Broxton Street layout">
+
+                                <div
+                                    class="mask flex-center rgba-white-strong">
+                                </div>
+
+                            </a>
+
+                        </div>
+
+
+                        <div class="caption">
+
+                            <p
+                                style="
+                                font-family: robotoitalic;
+                                font-size: 75%;
+                                ">
+
+                                Broxton St. – Layout
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- 04 Moodboard -->
+
+            <div class="row">
+
+                <div class="col-xl-12 col-md-12 mb-4">
+
+                    <div class="thumbnail">
+
+                        <img
+                            class="img-fluid"
+                            src="../photos/the-hawk/04-moodboard.jpg"
+                            alt="Moodboard">
+
+                        <div class="caption">
+
+                            <p
+                                style="
+                                font-family: robotoitalic;
+                                font-size: 75%;
+                                text-align: center;
+                                ">
+
+                                Moodboard created in collaboration with
+                                Lead Graphic Designer, Lina Cheng
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================================
+         GLAM PHOTO
+         ========================================= -->
+
+    <div class="project-gallery">
+
+        <div class="tz-gallery">
+
+            <div class="row">
+
+
+                <!-- Mockup -->
+
+                <div class="col-xl-6 col-md-6 mb-4">
+
+                    <div class="thumbnail">
+
+                        <img
+                            class="img-fluid"
+                            src="../photos/the-hawk/05-glam-photo-mock.jpg"
+                            alt="Glam Photo Moment Mockup">
+
+                        <div class="caption">
+
+                            <p
+                                style="
+                                font-family: robotoitalic;
+                                font-size: 75%;
+                                text-align: center;
+                                ">
+
+                                Glam Photo Moment Mockup
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Actual photo -->
+
+                <div class="col-xl-6 col-md-6 mb-4">
+
+                    <div class="thumbnail">
+
+                        <img
+                            class="img-fluid"
+                            src="../photos/the-hawk/06-glam-photo.jpg"
+                            alt="Glam Photo Moment">
+
+                        <div class="caption">
+
+                            <p
+                                style="
+                                font-family: robotoitalic;
+                                font-size: 75%;
+                                text-align: center;
+                                ">
+
+                                Glam Photo Moment
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================================
+         STEP & REPEAT
+         ========================================= -->
+
+    <div class="project-gallery">
+
+        <div class="tz-gallery">
+
+
+            <!-- Render -->
+
+            <div class="row">
+
+                <div class="col-xl-12 col-md-12 mb-4">
+
+                    <div class="thumbnail">
+
+                        <img
+                            class="img-fluid"
+                            src="../photos/the-hawk/07-s&r-render.jpg"
+                            alt="Step and Repeat Render">
+
+                        <div class="caption">
+
+                            <p
+                                style="
+                                font-family: robotoitalic;
+                                font-size: 75%;
+                                ">
+
+                                Step & Repeat Render
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Final image -->
+
+            <div class="row">
+
+                <div class="col-xl-12 col-md-12 mb-4">
+
+                    <div class="thumbnail">
+
+                        <img
+                            class="img-fluid"
+                            src="../photos/the-hawk/08-s&r-image.jpg"
+                            alt="Step and Repeat">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================================
+         EVENT PHOTOS
+         ========================================= -->
+
+    <div class="project-gallery">
+
+        <div class="tz-gallery">
+
+
+            <!-- First row: 2 images -->
+
+            <div class="row">
+
+
+                <div class="col-xl-6 col-md-6 mb-4">
+
+                    <div class="thumbnail">
+
+                        <img
+                            class="img-fluid"
+                            src="../photos/the-hawk/09-fan-pens.jpg"
+                            alt="Fan Pens">
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="col-xl-6 col-md-6 mb-4">
+
+                    <div class="thumbnail">
+
+                        <img
+                            class="img-fluid"
+                            src="../photos/the-hawk/10-fan-pens.jpg"
+                            alt="Fan Pens">
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- Second row: 3 images -->
+
+            <div class="row">
+
+
+                <div class="col-xl-4 col-md-4 mb-4">
+
+                    <div class="thumbnail">
+
+                        <img
+                            class="img-fluid"
+                            src="../photos/the-hawk/12-lounge.jpg"
+                            alt="Lounge">
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="col-xl-4 col-md-4 mb-4">
+
+                    <div class="thumbnail">
+
+                        <img
+                            class="img-fluid"
+                            src="../photos/the-hawk/11-dj.jpg"
+                            alt="DJ">
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="col-xl-4 col-md-4 mb-4">
+
+                    <div class="thumbnail">
+
+                        <img
+                            class="img-fluid"
+                            src="../photos/the-hawk/13-lounge.jpg"
+                            alt="Lounge">
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================================
+         SLIDESHOW
+         ========================================= -->
+
+    <div class="project-gallery">
+
+        <div class="slideshow-container">
+
+
+            <!-- Slide 1 -->
+
+            <div class="slide">
+
+                <img
+                    src="../photos/the-hawk/14-putt-putt.jpg"
+                    alt="Putt Putt">
+
+            </div>
+
+
+
+            <!-- Slide 2 -->
+
+            <div class="slide">
+
+                <img
+                    src="../photos/the-hawk/15-pre-reception.jpg"
+                    alt="Pre Reception">
+
+            </div>
+
+
+
+            <!-- Slide 3 -->
+
+            <div class="slide">
+
+                <img
+                    src="../photos/the-hawk/16-BAs.jpg"
+                    alt="BA's">
+
+            </div>
+
+
+
+            <!-- Slide 4 -->
+
+            <div class="slide">
+
+                <img
+                    src="../photos/the-hawk/17-bar.jpg"
+                    alt="Bar">
+
+            </div>
+
+
+
+            <!-- Slide 5 -->
+
+            <div class="slide">
+
+                <img
+                    src="../photos/the-hawk/18-dj.jpg"
+                    alt="DJ">
+
+            </div>
+
+
+
+            <!-- Navigation arrows -->
+
+            <button
+                type="button"
+                class="prev"
+                aria-label="Previous slide">
+
+                &#10094;
+
+            </button>
+
+
+            <button
+                type="button"
+                class="next"
+                aria-label="Next slide">
+
+                &#10095;
+
+            </button>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================================
+         IMAGE CREDIT
+         ========================================= -->
+
+    <div class="project-gallery">
+
+        <p
+            style="
+            font-family: robotoitalic;
+            font-size: 75%;
+            text-align: center;
+            ">
+
+            <br>
+
+            Images Courtesy of MKG
+
+        </p>
+
+    </div>
+
+
+</main>
+
+
+
+<!-- =========================================
+     FOOTER
+     ========================================= -->
+
+<footer class="text-muted">
+
+</footer>
+
+
+
+<!-- =========================================
+     JAVASCRIPT
+     ========================================= -->
+
+<script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C4OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous">
+</script>
+
+
+<script>
+
+    window.jQuery || document.write(
+        '<script src="assets/js/vendor/jquery.slim.min.js"><\/script>'
+    );
+
+</script>
+
+
+<script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+<!-- BaguetteBox -->
+
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js">
+</script>
+
+
+<script>
+
+    baguetteBox.run('.tz-gallery');
+
+</script>
+
+
+
+<!-- =========================================
+     SLIDESHOW JAVASCRIPT
+     ========================================= -->
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+
+    const slideshow =
+        document.querySelector(".slideshow-container");
+
+
+    if (!slideshow) {
+
+        return;
+
+    }
+
+
+    const slides =
+        slideshow.querySelectorAll(".slide");
+
+
+    const prevButton =
+        slideshow.querySelector(".prev");
+
+
+    const nextButton =
+        slideshow.querySelector(".next");
+
+
+    let slideIndex = 0;
+
+
+
+    /* -----------------------------------------
+       Show a specific slide
+       ----------------------------------------- */
+
+    function showSlide(index) {
+
+
+        slides.forEach(function (slide) {
+
+            slide.classList.remove("active");
+
+        });
+
+
+        slides[index].classList.add("active");
+
+    }
+
+
+
+    /* -----------------------------------------
+       Next button
+       ----------------------------------------- */
+
+    nextButton.addEventListener("click", function () {
+
+
+        slideIndex++;
+
+
+        if (slideIndex >= slides.length) {
+
+            slideIndex = 0;
+
+        }
+
+
+        showSlide(slideIndex);
+
+    });
+
+
+
+    /* -----------------------------------------
+       Previous button
+       ----------------------------------------- */
+
+    prevButton.addEventListener("click", function () {
+
+
+        slideIndex--;
+
+
+        if (slideIndex < 0) {
+
+            slideIndex = slides.length - 1;
+
+        }
+
+
+        showSlide(slideIndex);
+
+    });
+
+
+
+    /* -----------------------------------------
+       Show first slide
+       ----------------------------------------- */
+
+    showSlide(slideIndex);
+
+
+});
+
+</script>
+
+
+</body>
+
+</html>
